@@ -6,156 +6,266 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Font - Properties</title>
     <style>
-        #td1{
-            border: double;
+    /* This Table Selector*/    
+        #table1{
+            border:double;
+            width:  100%;
 
         }
-        #td1 th{
+    
+        #table1 th{
             background-color: lightblue;
+        
         }
+        #tr1{
+            background-color:blueviolet;
+        }
+        #tr2{
+            background-color: aquamarine;
+        }
+
+    /* End of Table Selector*/
+        
         h1{
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             
         }
-        table td,th{
-            font-weight: bold;
+        body{
+            
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-style: normal;
-            font-variant: small-caps;
         }
-        #f1,#f2,#f3,#f5,#f6,#f7,#f8,#f9,#f10,#f11,#f12,#f13,#f14,#f15,#f16,#f17,#f18,#f19,#f20{
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            font-variant: small-caps;
+        
 
+    /*  1. This Font-size Properties values*/
+        #f-large{
+            font-size: large;
         }
-              
+        #f-larger{
+            font-size: larger;
+        }
+        #f-medium{
+            font-size: medium;
+        }
+        #f-small{
+            font-size: small;
+        }
+        #f-smaller{
+            font-size: smaller;
+        }
+        #f-x-large{
+            font-size: x-large;
+        }
+        #f-xx-larger{
+            font-size: xx-large;
+        }
+        #f-x-small{
+            font-size: x-small;
+        }
+        #f1-xx-small{
+            font-size: xx-small;
+        }
+    /* End of Font-size */
+        
+    /* 2. This Font-family Properities*/
+        #ff1{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        #ff2{
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+        #ff3{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+        #ff4{
+            font-family: cursive;
+        }
+        #ff5{
+            font-family: fantasy;
+        }
+        #ff6{
+            font-family:monospace ;
+        }
+        #ff7{
+            font-family: sans-serif;
+        }
+        #ff8{
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        }
+
+/* 3. This is Font-Weights*/
+        #f100{
+         font-weight: 100;   
+        }
+        #f200{
+            font-weight: 200;
+        }
+        #f300{
+            font-weight: 300;
+        }
+        #f400{
+            font-weight: 400;
+        }
+        #f500{
+            font-weight: 500;
+        }
+        #f600{
+            font-weight: 600;
+        }
+        #f700{
+            font-weight: 700;
+        }
+        #f800{
+            font-weight: 800;
+        }
+        #f900{
+            font-weight: 900;
+        }
+        #f900{
+            font-weight: 900;
+        }
+        
+        
+
     </style>
 </head>
 <body>
     <h1 style="text-align: center;"> Font Properties</h1>
     <hr>
-    <table id="td1">
-        <tr>
+    <table id="table1">
+        <tr id="tr0">
             <th>No</th>
             <th>Properties</th>
             <th>Vaild Values</th>
             <th>Example</th>
         </tr>
-        <tr>
+        <tr id="tr1">
             <td>1</td>
             <td>font-size</td>
-            <td></td>
-            <td></td>
+            <td><span id="f-large">large</span>|<span id="f-larger">larger</span>|<span id="f-medium"> medium</span>|<span id="f-small">small</span>|<span id="f-smaller">smaller</span>|<span id="f-x-large"> x-large</span>|<span id="f-xx-larger"> xx-large</span>|<span id="f-x-small"> x-small</span>|<span id="f1-xx-small"> xx-small</span></td>
+
         </tr>
-        <tr>
+        <tr id="tr2">
             <td>2</td>
-            <td>font family</td>
-            <td></td>
-            <td></td>
+            <td>font-family</td>
+            <td>
+                <span id="ff1">Cambria, Cochin, Georgia, Times, 'Times New Roman', serif</span><br>
+                <span id="ff2">Georgia, 'Times New Roman', Times, serif</span><br>
+                <span id="ff3">Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif</span><br>
+                <span id="ff4">cursive</span><br>
+                <span id="ff5">fantasy</span><br>
+                <span id="ff6">monospace</span><br>
+                <span id="ff7">sans-serif</span><br>
+                <span id="ff8">-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif</span><br>
+                <span id="ff9">online Fonts</span><br>
+            </td>
+            
         </tr>
-        <tr>
+        <tr id="tr3">
             <td>3</td>
             <td>font-weight</td>
-            <td></td>
+            <td>
+                <span id="f100">100</span>,<span id="f200"> 200</span>,<span id="f300"> 300</span>,<span id="f400"> 400</span>,<span id="f500"> 500</span>,<span id="f600"> 600</span>,<span id="f700"> 700</span>,<span id="f800"> 800</span>,<span id="f900"> 900</span><br>
+                <span>bold</span>,<span>bolder</span>,<span>lighter</span>,<span>normal</span>
+            </td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr4">
             <td>4</td>
             <td>font-style</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr5">
             <td>5</td>
             <td>font-variant</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr6">
             <td>6</td>
             <td>font-display</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr7">
             <td>7</td>
             <td>font-feature-settings</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr8">
             <td>8</td>
             <td>font-stretch</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr9">
             <td>9</td>
             <td>font-variant-ligatures</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr10">
             <td>10</td>
             <td>font-kerning</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr11">
             <td>11</td>
             <td>font-language-override</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr12">
             <td>12</td>
             <td>font-optical-size</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr13">
             <td>13</td>
             <td>font-size-adjust</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr14">
             <td>14</td>
             <td>font-synthesis</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr15">
             <td>15</td>
             <td>font-variant-alternates</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr16">
             <td>16</td>
             <td>font-variant-caps</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr17">
             <td>17</td>
             <td>font-variant-east-asian</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr18">
             <td>18</td>
             <td>font-variant-numeric</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr19">
             <td>19</td>
             <td>font-variant-position</td>
             <td></td>
             <td></td>
         </tr>
-        <tr>
+        <tr id="tr20">
             <td>20</td>
             <td>font-variation-settings</td>
             <td></td>
@@ -191,7 +301,7 @@
     <hr>
     <div id="f3">
         <h1>3.Font-Weight</h1>
-        <p style="font-weight: 100;">1.<b>100</b>,200,300,400,500,600,700,800,900</p>
+        <p style="font-weight: 100;">1.<span id="f100">100</span>,<span id="f200"> 200</span>,<span id="f300"> 300</span>,<span id="f400"> 400</span>,<span id="f500"> 500</span>,<span id="f600"> 600</span>,<span id="f700"> 700</span>,<span id="f800"> 800</span>,<span id="f900"> 900</span></p>
         <p style="font-weight: bold;">2.bold</p>
         <p style="font-weight: bolder;">3.bolder</p>
         <p style="font-weight: lighter;">4.lighter</p>
@@ -223,22 +333,64 @@
     <hr>
     <div id="f6">
         <h1>6.font-display</h1>
+        <p style="font-display:auto;">1.auto</p>
+        <p style="font-display: block;">2.block</p>
+        <p style="font-display: swap;">3.swap</p>
+        <p style="font-display: fallback;">4.fallback</p>
+        <p style="font-display: optional;">5.optional</p>
     </div>
     <hr>
     <div id="f7">
         <h1>7.font-feature-settings</h1>
+        <p style="font-feature-settings:aalt;">aalt</p>
+        <p style="font-feature-settings: abvf;">abvf</p>
+        <p style="font-feature-settings: liga" 0;>0123456789</p>
+        <p style="font-feature-settings: smcp on;">0123456789</p>
     </div>
     <hr>
     <div id="f8">
         <h1>8.font-stretch</h1>
+        <p style="font-stretch: condensed;">1.condensed</p>
+        <p style="font-stretch: expanded;">2.expanded</p>
+        <p style="font-stretch: extra-condensed;">3.extra-condensed</p>
+        <p style="font-stretch: extra-expanded;">4.extra-expanded</p>
+        <p style="font-stretch: narrower;">5.narrower</p>
+        <p style="font-stretch: normal;">6.normal</p>
+        <p style="font-stretch: semi-condensed;">7.semi-condensed</p>
+        <p style="font-stretch: semi-expanded;">8.semi-expanded</p>
+        <p style="font-stretch: ultra-condensed;">9.ultra-condensed</p>
+        <p style="font-stretch: ultra-expanded;">10.ultra-expanded</p>
+        <p style="font-stretch: wider;">11.wider</p>
+        <p style="font-stretch: inherit;">12.inherit</p>
+        <p style="font-stretch: initial;">13.initial</p>
+        <p style="font-stretch: unset;">14.unset</p>
+
     </div>
     <hr>
     <div id="f9">
         <h1>9.font-variant-ligatures</h1>
+        <p style="font-variant-ligatures: additional-ligatures;">1.additional-ligatures</p>
+        <p style="font-variant-ligatures: common-ligatures;">2.common-ligatures</p>
+        <p style="font-variant-ligatures: contextual;">3.contextual</p>
+        <p style="font-variant-ligatures: discretionary-ligatures;">4.discretionary-ligatures</p>
+        <p style="font-variant-ligatures: historical-ligatures;">5.historical-ligatures</p>
+        <p style="font-variant-ligatures: no-additional-ligatures;">6.no-additional-ligatures</p>
+        <p style="font-variant-ligatures: no-common-ligatures;">7.no-common-ligatures</p>
+        <p style="font-variant-ligatures: none;">8.none</p>
+        <p style="font-variant-ligatures: normal;">9.normal</p>
+        <p style="font-variant-ligatures: inherit;">10.inherit</p>
+        <p style="font-variant-ligatures: initial;">11.initial</p>
+        <p style="font-variant-ligatures: unset;">12.unset</p>
     </div>
     <hr>
     <div id="f10">
         <h1>10.font-kerning</h1>
+        <p style="font-kerning: auto;">1.auto</p>
+        <p style="font-kerning: none;">2.none</p>
+        <p style="font-kerning: normal;">3.normal</p>
+        <p style="font-kerning: inherit;">4.inherit</p>
+        <p style="font-kerning: initial;">5.initial</p>
+        <p style="font-kerning: unset;">6.unset</p>
     </div>
     <hr>
     <div id="f11">
