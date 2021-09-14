@@ -1,0 +1,21 @@
+h3{
+    color: green;
+}
+h1{
+    color: orange;
+    text-transform: capitalize;
+}
+p{
+    text-indent: 50px;
+}
+.not-work{
+    color: red;
+    font-size: small;
+}
+#table1{
+    text-transform: capitalize;
+    padding: 10px;
+    border-spacing: 10px;
+    border: ridge;
+    font-size: medium;
+}
